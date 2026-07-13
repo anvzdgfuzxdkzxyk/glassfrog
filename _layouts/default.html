@@ -1,1 +1,17 @@
-{{ content }}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title> <!--- Logic so site doesn't end up with broke "- site.title" in the event of no page.title specified in front matter -->
+    <link rel="icon" href=""{{ "/assets/images/favicon.ico" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  </head>
+  <body>
+    {% include header.html %}
+    <main class="main-content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
