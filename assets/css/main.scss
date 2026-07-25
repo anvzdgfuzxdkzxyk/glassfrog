@@ -2,4 +2,6 @@
 ---
 
 @use "variables"; // This line will always return an error because jekyll requires a valid front matter in order to not interpret it as a regular file. That results in the "{ expected" scss error. This error can be safely ignored because the only way to fix this is to remove the front matter, which will cause jekyll not to process the file as scss.
+@use "fonts";
 @use "footer";
+@use "header";

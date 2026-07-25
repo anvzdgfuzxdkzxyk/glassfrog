@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "fonts" as *;
 
 .site-footer {
   margin-top: 4rem;
@@ -8,6 +9,7 @@
   color: $text-muted;
   font-size: 0.875rem;
   line-height: $spacing-sm;
+  font-family: $font-code;
   a {
     color: $text-muted;
     text-decoration: none;
