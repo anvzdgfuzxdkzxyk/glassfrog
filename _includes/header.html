@@ -1,0 +1,18 @@
+<header class="site-header" id="top">
+    <nav class="desktop-site-nav" aria-label="Primary"> <!---Using desktop site nav to make adding mobile nav later easier and avoid an entire refactor of the relevant code-->
+        <ul class="nav-left">
+            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+            <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+        </ul>
+
+        <a class="site-logo" href="{{ '/' | relative_url }}" aria-label="Home">
+            <img src="{{ '/assets/images/logo.svg' | relative_url }}"
+                 alt="justanewdev logo">
+        </a>
+
+        <ul class="nav-right">
+            <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+            <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        </ul>
+    </nav>
+</header>

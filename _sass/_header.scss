@@ -1,0 +1,65 @@
+@use "variables" as *;
+
+.site-header{
+    width: 90%;
+    margin: 2rem auto;
+
+    padding: 1rem 2rem;
+
+    background-color: $accent-1-light;
+    border: 2px solid$accent-1-dark;
+    border-radius: 1rem;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    color: $accent-2-dark;
+}
+
+.desktop-site-nav {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    gap: 2rem;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right {
+    display: flex;
+    gap: 2rem;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.site-logo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 50%;
+    border: 2px solid $accent-1-dark;
+
+    background: $background;
+
+    text-decoration: none;
+}
+
+.site-logo img {
+    width: 70%;
+    height: 70%;
+}
