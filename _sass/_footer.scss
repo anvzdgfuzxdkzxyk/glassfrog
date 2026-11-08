@@ -4,7 +4,6 @@
 .site-footer {
   margin-top: 4rem;
   padding: 2rem 0;
-  background-color: $background;
   text-align: center;
   color: $text-muted;
   font-size: 0.875rem;
@@ -26,9 +25,8 @@
   }
 }
 
-
 .footer-divider {
-  width: min(80%, 48rem);
+  width: min(60%, 48rem);
   margin: 0 auto 1.5rem;
   color: $accent-1-dark;
   display: flex;
