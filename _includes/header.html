@@ -6,10 +6,9 @@
         </a>
 
         <ul class="primary-nav">
-            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-            <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-            <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-            <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+            {% for item in site.data.navigation %}
+                <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            {% endfor %}
         </ul>
     </nav>
 </header>
