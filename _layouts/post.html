@@ -4,4 +4,18 @@ layout: default
 
 <main class="post">
     {{content}}
+
+    {% if page.posts %}
+        <ul class="tagged-posts">
+            {% for post in page.posts %}
+                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% elsif page.tags %}
+        <ul class="post-tags" aria-label="Tags">
+            {% for tag in page.tags %}
+                <li><a href="{{ '/tags/' | append: tag | slugify | append: '/' | relative_url }}">{{ tag }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
 </main>

@@ -1,0 +1,6 @@
+plugins:
+  - jekyll/tagging
+
+tag_page_layout: post
+tag_page_dir: tags
+tag_permalink_style: pretty
