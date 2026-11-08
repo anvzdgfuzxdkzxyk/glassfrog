@@ -1,0 +1,12 @@
+@use "variables" as *;
+@use "fonts" as *;
+
+.post {
+    width: min(80%, 48rem);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: $font-body;
+    color: $accent-2-dark;
+    background-color: $background;
+}
